@@ -3,6 +3,8 @@ import random
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 import pandas as pd
+import matplotlib  # 이 부분이 필요합니다.
+
 
 # CSV 파일 경로 지정
 file_path = "data/england-premier-league-matches-2018-to-2019-stats.csv"

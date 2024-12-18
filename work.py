@@ -4,8 +4,16 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 import pandas as pd
 
-file_path = r"C:\Users\user2\Downloads\week10\england-premier-league-matches-2018-to-2019-stats.csv"
-data = pd.read_csv(file_path)
+# CSV 파일 경로 지정
+file_path = "data/england-premier-league-matches-2018-to-2019-stats.csv"
+
+# 데이터 읽기
+try:
+    data = pd.read_csv(file_path)
+    st.write("데이터 미리보기:")
+    st.write(data.head())
+except FileNotFoundError:
+    st.error("CSV 파일을 찾을 수 없습니다. 파일 경로를 확인하세요.")
 
 
 font_path = "C:/Windows/Fonts/malgun.ttf"

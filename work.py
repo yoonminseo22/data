@@ -15,6 +15,12 @@ try:
 except FileNotFoundError:
     st.error("CSV 파일을 찾을 수 없습니다. 파일 경로를 확인하세요.")
 
+# 기본 폰트 설정 (한글 깨짐 방지)
+plt.rcParams['font.family'] = 'Arial'  # 대체 폰트 (Windows/Mac/Linux 호환 가능)
+
+# 폰트 관련 오류 방지를 위해 폰트 캐시 재설정
+matplotlib.font_manager._rebuild()
+
 
 font_path = "C:/Windows/Fonts/malgun.ttf"
 font = fm.FontProperties(fname=font_path)

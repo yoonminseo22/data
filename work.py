@@ -18,7 +18,7 @@ except FileNotFoundError:
     st.error("CSV 파일을 찾을 수 없습니다. 파일 경로를 확인하세요.")
 
 # 나눔고딕 폰트 경로
-font_path = "fonts/NanumGothic.ttf"
+font_path = "font/NanumGothic-Regular.ttf"
 font_prop = fm.FontProperties(fname=font_path)
 
 # 폰트 설정
